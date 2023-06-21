@@ -7,14 +7,15 @@
 	let transactionCurrency = 'GBP';
  	let transactionPromoCode = 'TEST';
 		 
-        dataLayer = [{
-        'transactionTotal': transactionTotal,
-        'transactionCurrency': transactionCurrency,
-        'transactionID': reference,
-        'transactionPromoCode': transactionPromoCode,
-        'event': "checkout"
-        }];
-        </script>
+        <script>
+		dataLayer = [{
+		'transactionTotal': "{transactionTotal}",
+		'transactionCurrency': "{transactionCurrency}",
+		'transactionID': "{transactionID}",
+		'transactionPromoCode': "{transactionPromoCode}",
+		'event': "awin.dl.ready"
+		}];
+	</script>
 	
     <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
