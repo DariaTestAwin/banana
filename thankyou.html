@@ -2,13 +2,16 @@
 <head>
 	<script>
 	//unique ref number
-	var reference = Date.now()
+	var reference = Date.now();
+	let transactionTotal = 19.99;
+	let transactionCurrency = 'GBP';
+ 	let transactionPromoCode = 'TEST';
 		 
         dataLayer = [{
-        'transactionTotal': "19.99",
-        'transactionCurrency': "GBP",
+        'transactionTotal': transactionTotal,
+        'transactionCurrency': transactionCurrency,
         'transactionID': reference,
-        'transactionPromoCode': "TEST",
+        'transactionPromoCode': transactionPromoCode,
         'event': "checkout"
         }];
         </script>
