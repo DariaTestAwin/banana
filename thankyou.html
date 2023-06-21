@@ -3,16 +3,16 @@
 	<script>
 	//unique ref number
 	var reference = Date.now()
-	let transactionTotal = 19.99
-	let transactionCurrency = 'GBP'
- 	let transactionPromoCode = 'TEST'
+	let total = 19.99
+	let currency = 'GBP'
+ 	let voucher = 'TEST'
 		 
         
 	dataLayer = [{
-	'transactionTotal': "{transactionTotal}",
-	'transactionCurrency': "{transactionCurrency}",
+	'transactionTotal': total,
+	'transactionCurrency': currency,
 	'transactionID': "{transactionID}",
-	'transactionPromoCode': "{transactionPromoCode}",
+	'transactionPromoCode': voucher,
 	'event': "awin.dl.ready"
 	}];
 	</script>
