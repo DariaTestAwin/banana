@@ -7,15 +7,26 @@
 	var currency = 'GBP';
  	var voucher = 'TEST';
 		 
-        event: "purchase",
-	eventModel: {
-	    value: total,
-	    id: reference,
-	    currency: currency,
-	    coupon: voucher,
-	    transaction_id: reference,
-	    event_action: "checkout",
-  	}
+ //        event: "purchase",
+	// eventModel: {
+	//     value: total,
+	//     id: reference,
+	//     currency: currency,
+	//     coupon: voucher,
+	//     transaction_id: reference,
+	//     event_action: "checkout",
+ //  	}
+		
+	dataLayer = [{
+		eventModel: {
+		    value: total,
+		    id: reference,
+		    currency: currency,
+		    coupon: voucher,
+		    transaction_id: reference,
+		    event_action: "checkout",
+	  	}
+	}];
 		
 	// dataLayer = [{
 	// 'totalAmount': total,
