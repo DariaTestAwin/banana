@@ -7,35 +7,15 @@
 	var currency = 'GBP';
  	var voucher = 'TEST';
 		 
- //        event: "purchase",
-	// eventModel: {
-	//     value: total,
-	//     id: reference,
-	//     currency: currency,
-	//     coupon: voucher,
-	//     transaction_id: reference,
-	//     event_action: "checkout",
- //  	}
-		
+
 	dataLayer = [{
-		eventModel: {
-		    value: total,
-		    id: reference,
-		    currency: currency,
-		    coupon: voucher,
-		    transaction_id: reference,
-		    event_action: "checkout",
-	  	}
+	'totalAmount': total,
+	'transactionCurrency': currency,
+	'reference': reference,
+	'voucherCode': voucher,
+	'event': "awin.dl.ready"
+	'event': "checkout"
 	}];
-		
-	// dataLayer = [{
-	// 'totalAmount': total,
-	// 'transactionCurrency': currency,
-	// 'reference': reference,
-	// 'voucherCode': voucher,
-	// 'event': "awin.dl.ready"
-	// 'event': "checkout"
-	// }];
 	
 	</script>
 	
