@@ -6,16 +6,25 @@
 	var total = 19.99;
 	var currency = 'GBP';
  	var voucher = 'TEST';
+
+	dataLayer = [{
+	'transactionTotal': "{transactionTotal}",
+	'transactionCurrency': "{transactionCurrency}",
+	'transactionID': "{transactionID}",
+	'transactionPromoCode': "{transactionPromoCode}",
+	'event': "awin.dl.ready"
+	}];
+	
 		 
         
-	dataLayer = [{
-	'totalAmount': total,
-	'transactionCurrency': currency,
-	'reference': reference,
-	'voucherCode': voucher,
-	'event': "awin.dl.ready"
-	'event': "checkout"
-	}];
+	// dataLayer = [{
+	// 'totalAmount': total,
+	// 'transactionCurrency': currency,
+	// 'reference': reference,
+	// 'voucherCode': voucher,
+	// 'event': "awin.dl.ready"
+	// 'event': "checkout"
+	// }];
 	</script>
 
     <!-- Google Tag Manager -->
